@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.krish.bvcmba.simplebuttonexample.MainActivity"
+    android:background="@mipmap/bvb"
+    android:transitionGroup="false">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actual Button"
+        android:id="@+id/actualbutton"
+        android:layout_alignParentLeft="true"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Small Button"
+        android:id="@+id/smallbutton"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="175dp"/>
+
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="32dp">
+
+
+    <RadioGroup
+        android:layout_width="350dp"
+        android:layout_height="125dp"
+        android:id="@+id/radioGroup">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Is it U? Click Here to Display Toast ,Wich Option u have Selected "
+            android:textColor="#ff1122"
+            android:id="@+id/textView"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignStart="@+id/radioButtonNo" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/RadioButtonYes"
+            android:id="@+id/radioButtonYes"
+            android:checked="false"
+            android:layout_alignTop="@+id/radioButtonNo"
+            android:layout_alignEnd="@+id/linearLayout" />
+
+        <RadioButton
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:text="@string/RadioButtonNo"
+            android:id="@+id/radioButtonNo"
+            android:checked="false"
+            android:layout_below="@+id/textView"
+
+            />
+
+    </RadioGroup>
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New CheckBox"
+        android:id="@+id/checkBox"
+
+        android:checked="false"
+        android:layout_alignBottom="@+id/toggleButton"
+        android:layout_alignEnd="@+id/smallbutton" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/toggleButton"
+
+        android:checked="false"
+        android:layout_below="@+id/actualbutton"
+        android:layout_alignParentStart="true"
+        android:clickable="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:background="@drawable/abc_ic_star_black_16dp"
+        android:minHeight="55dp"
+        android:nestedScrollingEnabled="true"
+        android:minWidth="125dp"
+        android:layout_below="@+id/checkBox"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

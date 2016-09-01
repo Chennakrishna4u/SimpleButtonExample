@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SimpleButtonExample</string>
+    <string name="RadioButtonYes">Yes Button</string>
+    <string name="RadioButtonNo">No Button</string>
+</resources>
